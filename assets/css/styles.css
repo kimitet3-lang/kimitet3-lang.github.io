@@ -114,6 +114,41 @@ h2 {
   text-align: center;
 }
 
+/* Tech Stack Section Styles */
+.stack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stack-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.stack-list li:last-child {
+  border-bottom: none;
+}
+
+.stack-list strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.compliance-note {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(56, 189, 248, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  color: #94a3b8;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .donate-section {
   text-align: center;
   background: var(--card);

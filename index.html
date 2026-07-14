@@ -1,118 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tet Prompt + Affiliate AI Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A transparent, practical hub for reusable AI prompts, free-first tools, and agentic workflows.">
+  <title>Tet Prompt + AI Workflow Hub</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>🧠 Tet Prompt + Affiliate AI Hub</h1>
-      <p class="subtitle">Transparent Prompt Engineering. High-ROI AI Tools. Zero Hype.</p>
-      <a href="https://github.com/kimitet3-lang/kimitet3-lang.github.io/blob/main/PROMPTS.md" class="btn" target="_blank">View Prompt Library</a>
-      <a href="https://github.com/kimitet3-lang/kimitet3-lang.github.io" class="btn btn-outline" target="_blank">GitHub Repo</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">Tet Prompt Hub</a>
+      <nav aria-label="Main navigation">
+        <a href="#stack">Free-first stack</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#prompts">Prompts</a>
+        <a href="PROMPTS.md">Library</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="offers">
-      <h2>🚀 High-ROI AI Picks</h2>
-      <p class="section-desc">Tools we actually use to build, test, and deploy our AI workflows.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>DeepSeek 4 Pro</h3>
-          <p>The logical powerhouse. We use DeepSeek for complex prompt structuring, code generation, and debugging our HTML/CSS layouts.</p>
-          <a href="#" class="btn">Try DeepSeek</a>
-        </div>
-        <div class="card">
-          <h3>Muse Spark AI</h3>
-          <p>The creative engine. Muse handles our UI/UX ideation, color palette generation, and creative hook writing for landing pages.</p>
-          <a href="#" class="btn">Try Muse Spark</a>
-        </div>
-        <div class="card">
-          <h3>Meta AI</h3>
-          <p>The conversationalist. We leverage Meta AI for rapid copywriting, social media distribution, and testing conversational prompt flows.</p>
-          <a href="#" class="btn">Try Meta AI</a>
-        </div>
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">OPEN • PRACTICAL • AUDITABLE</p>
+      <h1>Build useful AI workflows without the hype.</h1>
+      <p class="hero-copy">Reusable prompts, free-first infrastructure, and clear operating rules for turning ideas into working projects.</p>
+      <div class="actions">
+        <a class="btn" href="PROMPTS.md">Open the prompt library</a>
+        <a class="btn btn-outline" href="https://github.com/kimitet3-lang/kimitet3-lang.github.io" target="_blank" rel="noopener">View the repository</a>
       </div>
-      <p class="disclosure">* Affiliate Disclosure: We may earn a commission if you purchase through our links, at no extra cost to you. This supports the hub's development.</p>
+      <p class="note">Free tiers have limits. A domain, payment processing, or higher usage can still cost money.</p>
     </section>
 
-    <section id="tech-stack" class="container">
-      <h2>⚡ Max Superpower Tech Stack (Free-Tier Verified)</h2>
-      <p class="section-desc">The exact zero-cost infrastructure and AI models we use to build, deploy, and monetize this hub. No paid tools required.</p>
+    <section id="stack" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">FREE → FREE → FREE</p>
+        <h2>The smallest stack that can ship</h2>
+        <p>Start with static files and local work. Add a database, email, or model API only when the product actually needs it.</p>
+      </div>
       <div class="grid">
-        <!-- Infrastructure Card -->
-        <div class="card">
-          <h3>☁️ Cloud & Infra</h3>
-          <ul class="stack-list">
-            <li><strong>1. Cloudflare Pages + Workers:</strong> Global edge hosting, 100K free requests/day, R2/D1 included.</li>
-            <li><strong>2. Supabase:</strong> Postgres + Auth + Vector DB. Generous free tier (pauses after 7d idle).</li>
-            <li><strong>3. GitHub Codespaces:</strong> Full VS Code dev environment in-browser, free for public repos.</li>
+        <article class="card">
+          <span class="card-kicker">01 / Ship</span>
+          <h3>GitHub + Pages</h3>
+          <p>Version-controlled source and a public static site. No server is required for the first useful version.</p>
+          <ul>
+            <li>Root-level <code>index.html</code></li>
+            <li>GitHub Pages deployment workflow</li>
+            <li>Cloudflare DNS only when you own a domain</li>
           </ul>
-        </div>
-        <!-- AI Models Card -->
-        <div class="card">
-          <h3>🧠 Open Models & LLMs</h3>
-          <ul class="stack-list">
-            <li><strong>1. Qwen3-Coder-32B:</strong> Apache 2.0. Best for code gen, agentic workflows, complex logic.</li>
-            <li><strong>2. DeepSeek-R1-Distill:</strong> MIT License. Top-tier reasoning, math, step-by-step analysis.</li>
-            <li><strong>3. Llama-4-Maverick-17B:</strong> Ultra-low latency general chat & multilingual tasks.</li>
+        </article>
+        <article class="card">
+          <span class="card-kicker">02 / Compute</span>
+          <h3>Browser + edge</h3>
+          <p>Keep simple features in the browser. Use Cloudflare Workers for small APIs and D1 for small relational data when needed.</p>
+          <ul>
+            <li>Workers Free: quota and CPU limits apply</li>
+            <li>D1: small databases, measured usage</li>
+            <li>R2: object storage with free egress</li>
           </ul>
-        </div>
-        <!-- Monetization Card -->
-        <div class="card">
-          <h3>💰 Zero-Cost MVP Stack</h3>
-          <ul class="stack-list">
-            <li><strong>Payments:</strong> Stripe Payment Links / LemonSqueezy (no monthly fee).</li>
-            <li><strong>Email:</strong> Resend (100/day free) or Cloudflare Email Routing.</li>
-            <li><strong>Analytics:</strong> Cloudflare Web Analytics (built-in, privacy-first).</li>
-            <li><strong>Storage:</strong> Cloudflare R2 (10GB free, $0 egress).</li>
+        </article>
+        <article class="card">
+          <span class="card-kicker">03 / AI</span>
+          <h3>Route by task</h3>
+          <p>Use a local or free-tier model for experiments, then switch providers only when speed, quality, or uptime justifies it.</p>
+          <ul>
+            <li>Reasoning: DeepSeek-family models</li>
+            <li>Coding: Qwen Coder-family models</li>
+            <li>General: Llama, Gemma, or Mistral families</li>
           </ul>
-        </div>
+        </article>
       </div>
-      <div class="compliance-note">
-        <strong>🔒 Privacy & Compliance Safe:</strong> All recommended tools are GDPR/CCPA compliant on free tiers. We never log raw prompts, use only permissive licenses (Apache/MIT/Llama), and provide data deletion paths via Supabase RPC.
-      </div>
+      <div class="callout"><strong>Reality check:</strong> “Free” means no recurring infrastructure charge within a provider’s limits. It does not mean unlimited traffic, guaranteed uptime, free domains, or free payment processing.</div>
     </section>
 
-    <section id="prompts-preview">
-      <h2>🛠️ Featured Skills</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Affiliate Page Generator</h3>
-          <p>Generate high-converting, honest, mobile-first landing page structures for your affiliate offers.</p>
-          <button class="btn btn-copy" data-prompt="Generate a clean, mobile-first affiliate landing page structure (sections + HTML skeleton), with one PayPal donate placeholder and no get-rich-q[...]
+    <section id="workflows" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">ONE OPERATING LOOP</p>
+          <h2>From request to verified result</h2>
+          <p>Every agentic task follows the same auditable path instead of producing disconnected snippets.</p>
         </div>
-        <div class="card">
-          <h3>AI Task Router</h3>
-          <p>Analyze your daily tasks and route them to the most efficient AI tool (DeepSeek, Meta, Muse) or automation.</p>
-          <button class="btn btn-copy" data-prompt="Analyze my task list and route each item to the best AI tool or automation, providing a 1-sentence execution prompt for each.">Copy Short Prompt[...]
+        <div class="workflow-grid">
+          <div class="workflow-step"><b>01</b><h3>Capture</h3><p>State the goal, constraints, files, and acceptable side effects.</p></div>
+          <div class="workflow-step"><b>02</b><h3>Route</h3><p>Choose the smallest tool or model that can do the job.</p></div>
+          <div class="workflow-step"><b>03</b><h3>Build</h3><p>Change the source of truth, not a pasted copy or an untracked draft.</p></div>
+          <div class="workflow-step"><b>04</b><h3>Verify</h3><p>Run checks, inspect the diff, and test the public result.</p></div>
+          <div class="workflow-step"><b>05</b><h3>Log</h3><p>Record what changed, what was verified, and what remains blocked.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="donate">
-      <div class="donate-section">
-        <h2>☕ Support the Hub</h2>
-        <p>This project is 100% open-source and free. If our prompts save you time, consider buying us a coffee!</p>
-        <!-- REPLACE WITH YOUR ACTUAL PAYPAL BUTTON CODE -->
-        <form action="https://www.paypal.com/donate" method="post" target="_top">
-          <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL_HERE" />
-          <input type="hidden" name="currency_code" value="USD" />
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayP[...]
-        </form>
+    <section id="prompts" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">REUSABLE SKILLS</p>
+        <h2>Prompts that produce a working next step</h2>
+        <p>Copy the full versions from <a href="PROMPTS.md">PROMPTS.md</a>. These short versions are starting points, not magic buttons.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Affiliate page generator</h3>
+          <p>Creates honest, mobile-first page structures with disclosures and realistic calls to action.</p>
+          <button class="btn btn-copy" data-prompt="Create an honest, mobile-first affiliate landing page for [product] aimed at [audience]. Include benefits, limitations, disclosure text, accessible HTML, and one clear CTA. Do not promise income or guaranteed results.">Copy prompt</button>
+        </article>
+        <article class="card">
+          <h3>Task router</h3>
+          <p>Matches each task to the least expensive useful tool, with a manual fallback.</p>
+          <button class="btn btn-copy" data-prompt="Route each task in this list to the smallest useful tool or model. Return: task, category, recommended method, one execution prompt, estimated effort, privacy risk, and manual fallback. Prefer free or local methods.">Copy prompt</button>
+        </article>
+        <article class="card">
+          <h3>Study planner</h3>
+          <p>Builds realistic study schedules with active recall, review days, and free resources.</p>
+          <button class="btn btn-copy" data-prompt="Create a realistic study plan for [subject], [level], [duration], and [hours per day]. Include modules, daily actions, active recall, spaced review, free resources, milestones, and rest days.">Copy prompt</button>
+        </article>
+      </div>
+      <p id="copy-status" class="status" aria-live="polite"></p>
+    </section>
+
+    <section id="support" class="section container">
+      <div class="support-box">
+        <p class="eyebrow">TRANSPARENT SUPPORT</p>
+        <h2>Keep the library open</h2>
+        <p>This project is free to read and reuse. If it saves you time, support it through the project’s verified payment link when one is configured.</p>
+        <a class="btn" href="https://github.com/kimitet3-lang/kimitet3-lang.github.io">Support via the repository</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Tet Prompt + Affiliate AI Hub. Built with clarity and purpose.</p>
-    <p><a href="https://github.com/kimitet3-lang" style="color:var(--accent);">View on GitHub</a> | <a href="#offers" style="color:var(--accent);">Affiliate Disclosures</a></p>
+    <div class="container footer-wrap">
+      <p>© 2026 Tet Prompt Hub · Open documentation, clear limits.</p>
+      <a href="docs/agentic-operations.md">Operating rules and logging</a>
+    </div>
   </footer>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>

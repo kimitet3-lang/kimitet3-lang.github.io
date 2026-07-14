@@ -1,28 +1,13 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+const status = document.querySelector('#copy-status');
 
-// Copy Short Prompt to Clipboard
-document.querySelectorAll('.btn-copy').forEach(button => {
-  button.addEventListener('click', async function() {
-    const promptText = this.getAttribute('data-prompt');
+document.querySelectorAll('.btn-copy').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const prompt = button.dataset.prompt || '';
     try {
-      await navigator.clipboard.writeText(promptText);
-      const originalText = this.innerText;
-      this.innerText = '✅ Copied!';
-      this.style.background = '#10b981'; // Green
-      setTimeout(() => {
-        this.innerText = originalText;
-        this.style.background = '';
-      }, 2000);
-    } catch (err) {
-      console.error('Failed to copy text: ', err);
+      await navigator.clipboard.writeText(prompt);
+      status.textContent = 'Prompt copied to your clipboard.';
+    } catch {
+      status.textContent = 'Copy was blocked by the browser. Open PROMPTS.md to copy it manually.';
     }
   });
 });

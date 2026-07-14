@@ -1,36 +1,21 @@
-# 🤖 AI Platforms Guide
+# AI Platform Routing Manual
 
-This document explains how we utilize our fused AI stack to build the Tet Prompt Hub.
+Use the least expensive method that can meet the quality requirement. “Free” means within a provider's current limits; check the current model card, license, and pricing before shipping a commercial feature.
 
-## DeepSeek 4 Pro (The Architect)
+## Routing table
 
-**Best for:** Code generation, complex logic, and deep reasoning.
+| Work | First choice | Fallback | Reason |
+| --- | --- | --- | --- |
+| Long reasoning or difficult planning | A reasoning model such as DeepSeek-R1-family | Manual outline plus smaller model | Spend more compute only when it improves the decision |
+| Code and structured transformations | A Qwen Coder-family model | Local editor and tests | Strong structure, but tests remain the authority |
+| General drafting and multilingual work | Llama, Gemma, or Mistral family | Manual draft | Choose by language, context window, and latency |
+| Visual concepts and layout ideas | A multimodal or design-oriented model | Hand sketch or existing component library | Do not confuse a concept with production code |
+| Repetitive administration | A deterministic script or workflow | Manual batch | Automation should be predictable before it is autonomous |
 
-**How we use it:**
-- Writing the actual HTML/CSS/JS for this GitHub Pages site.
-- Structuring the multi-step logic inside our master prompts.
-- Debugging and optimizing prompt workflows.
+## Selection rules
 
-## Muse Spark AI (The Designer)
-
-**Best for:** Creative generation, UI/UX ideation, and visual formatting.
-
-**How we use it:**
-- Generating color palettes and layout ideas for the landing page.
-- Writing highly creative, attention-grabbing headlines for affiliate offers.
-- Formatting Markdown files to be visually appealing on GitHub.
-
-## Meta AI (The Marketer)
-
-**Best for:** Conversational flow, copywriting, and persona testing.
-
-**How we use it:**
-- Writing the persuasive (but honest) product descriptions.
-- Simulating user personas to test if our prompts actually work for beginners.
-- Drafting social media posts to distribute the hub.
-
-## The Fusion Workflow
-
-1. **Ideation:** We use **Meta AI** to brainstorm the core concept and target audience.
-2. **Design:** We use **Muse Spark** to design the layout and write the hooks.
-3. **Execution:** We use **DeepSeek** to code the final output and structure the prompt logic.
+1. Prefer local or browser-only processing for sensitive content.
+2. Verify the exact model version and commercial-use license.
+3. Never paste credentials, private keys, or unnecessary personal data into a model.
+4. Require a human check for public claims, payments, legal text, and customer-facing replies.
+5. Include a manual fallback when AI is slower or riskier than doing the task directly.

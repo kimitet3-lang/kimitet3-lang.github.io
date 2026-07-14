@@ -1,28 +1,23 @@
 ---
-name: New Prompt / Feature Task
-about: Use this template to propose a new prompt skill or site feature
-title: "[SKILL/FEATURE] "
-labels: ''
-assignees: ''
+name: Workflow request
+about: Request a prompt, routing improvement, or site change
+title: "[WORKFLOW] "
+labels: enhancement
+assignees: ""
 ---
 
-## 🎯 Goal
+## Goal
 
-*What is the goal of this new prompt or feature?*
+What result do you want?
 
-## 🛠️ Type
+## Inputs and files
 
-- [ ] New Prompt Skill (v1)
-- [ ] Prompt Upgrade (v2/v3)
-- [ ] Site Feature / UI Update
-- [ ] Documentation / Guide
+List the relevant task, repository, file, or public URL.
 
-## 📝 Details
+## Constraints
 
-*Provide details, context, or the draft content here.*
+Budget, privacy, deadline, model/tool preferences, and anything that must not happen.
 
-## ✅ Acceptance Criteria
+## Done condition
 
-- [ ] Follows the strict schema in `PROMPTS.md` (if applicable)
-- [ ] Tested in at least one AI platform (DeepSeek/Muse/Meta)
-- [ ] No "get-rich-quick" language used
+How should the result be verified?

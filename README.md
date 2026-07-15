@@ -9,7 +9,7 @@ A transparent, free-first repository for reusable prompts, small web experiments
 - **Operating rules:** [`docs/agentic-operations.md`](./docs/agentic-operations.md) connects request capture, execution, verification, email boundaries, and unified logging.
 - **Tool routing:** [`docs/ai-platforms.md`](./docs/ai-platforms.md) explains how to choose a model or a deterministic method.
 - **Whitepaper:** [`WHITEPAPER.md`](./WHITEPAPER.md) records the project vision and design principles.
-- **Deployment:** [`.github/workflows/pages.yml`](./.github/workflows/pages.yml) publishes the repository root with GitHub Pages.
+- **Deployment:** GitHub Pages publishes the repository root from the `main` branch (configured in the repository’s Pages settings).
 
 ## Free-first architecture
 
@@ -29,7 +29,7 @@ cd kimitet3-lang.github.io
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000` to preview the static site. The GitHub Pages workflow deploys the repository root after a push to `main`.
+Open `http://localhost:8000` to preview the static site. GitHub Pages publishes the repository root after a push to `main`, using the repository’s configured branch source.
 
 ## Email boundary
 

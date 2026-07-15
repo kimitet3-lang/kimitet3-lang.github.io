@@ -61,7 +61,7 @@ Do not record API keys, access tokens, passwords, full email bodies, or raw prom
 - Confirm the correct source directory.
 - Run `git diff --check`.
 - Check that links and assets resolve.
-- Confirm that the deployment workflow succeeds.
+- Confirm that the GitHub Pages deployment succeeds.
 - Report the public URL and exactly what was verified.
 
 ## 6. Current project boundary

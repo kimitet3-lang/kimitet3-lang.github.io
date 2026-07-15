@@ -20,7 +20,7 @@ Make useful AI workflows understandable, reusable, and auditable. The project co
 
 ### Deployment layer
 
-GitHub Actions publishes the repository root to GitHub Pages. The repository uses the `main` branch and the root-level `index.html` structure.
+GitHub Pages publishes the repository root from the `main` branch. The root-level `index.html` is the site entry point; no custom build workflow is required.
 
 ## 3. Design principles
 

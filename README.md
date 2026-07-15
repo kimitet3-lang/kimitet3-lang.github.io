@@ -39,5 +39,6 @@ This repository does not access an inbox or send email. Email handling requires 
 
 - No guaranteed income claims.
 - Clear affiliate disclosures where applicable.
+- No license is currently declared; do not assume reuse or redistribution rights.
 - No secrets or raw private messages in commits or logs.
 - Verify public changes before calling them deployed.

@@ -7,11 +7,11 @@
 - [x] Initialize `PROMPTS.md` with 3 core skills (v1)
 - [x] Deploy `index.html` to GitHub Pages
 
-## Phase 2: Monetization & Integration (Week 2)
-- [ ] Sign up for DeepSeek, Muse Spark, and Meta AI affiliate programs
-- [ ] Replace placeholder affiliate links in `index.html`
-- [ ] Generate and embed actual PayPal Donate button code in `index.html`
-- [ ] Add legal Affiliate Disclosure page or section
+## Phase 2: Monetization & Integration (Only after verification)
+- [ ] Verify that any proposed affiliate or referral program is official, available, and compatible with the project
+- [ ] Add only verified affiliate links, with clear disclosure and current terms
+- [ ] Configure a payment or donation link only after the account, fees, privacy terms, and destination have been reviewed
+- [ ] Add the relevant legal disclosure before publishing monetized links
 
 ## Phase 3: Prompt Evolution (Week 3-4)
 - [ ] Create Skill 04: "Email Copywriter" (v1)

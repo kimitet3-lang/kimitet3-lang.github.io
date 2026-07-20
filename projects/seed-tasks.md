@@ -4,7 +4,7 @@
 - [x] Create repository and folder structure
 - [x] Write and publish `README.md`
 - [x] Write and publish `WHITEPAPER.md`
-- [x] Initialize `PROMPTS.md` with 3 core skills (v1)
+- [x] Initialize `PROMPTS.md` with 4 core skills (v1)
 - [x] Deploy `index.html` to GitHub Pages
 
 ## Phase 2: Monetization & Integration (Only after verification)
@@ -14,10 +14,10 @@
 - [ ] Add the relevant legal disclosure before publishing monetized links
 
 ## Phase 3: Prompt Evolution (Week 3-4)
-- [ ] Create Skill 04: "Email Copywriter" (v1)
+- [x] Create Skill 04: "Agentic Build-and-Verify" (v1)
 - [ ] Create Skill 05: "Code Refactorer" (v1)
 - [ ] Upgrade Skill 01 to v1.1 (Add multi-language support)
-- [ ] Test all v1 prompts across DeepSeek, Muse, and Meta AI
+- [ ] Test all v1 prompts against selected current model/provider surfaces, recording exact versions, access paths, test dates, and applicable terms or licenses
 
 ## Phase 4: Community & Growth (Month 2)
 - [ ] Share repository on r/ChatGPT, r/PromptEngineering, and Twitter
